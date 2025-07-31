@@ -7,7 +7,7 @@
 \usepackage{fontspec}
 \setmainfont{TeX Gyre Schola}
 \setsansfont{Inter}
-\usemathfont{unicode-math}
+\usepackage{unicode-math}
 \setmathfont{TeX Gyre Schola Math}
 
 \usetheme{Singapore}
@@ -17,7 +17,7 @@
 \setbeamerfont*{framesubtitle}{size=\large, series=\upshape\itshape, parent=structure}
 
 \title{\scshape Translating Information Into Action}
-\subtitle{SDG 3: Good Health and Well-being}
+\subtitle{\upshape SDG 3: Good Health and Well-being}
 \author{Andre Poghosyan, Joanna Tang, Runxi Yu}
 \date{July 31, 2025}
 
@@ -116,10 +116,24 @@
 	ASI is improved 1.5\%, RSI improved 0.4\%, but both have $p > 0.05$.
 
 	So no, edutainment did not consciously improve hygiene knowledge.
-	
-	\footnotesize (Section 3.3.2 must unfortunately be skipped, as ``Elastic Net'' and
-	other ML-related concepts are out of our current scope.)
 \end{frame}
+
+\begin{frame}{When Do They Use the Dispenser?}{Findings from Machine Learning}
+	Treated households were tracked minute-by-minute on:
+	\begin{itemize}
+		\item When they watched entertainment or edutainment
+		\item When they used the soap dispenser
+	\end{itemize}
+
+	The best predictors of handwashing are:
+	\begin{itemize}
+		\item Watching edutainment in the past 3--4 weeks
+		\item Watching \emph{any} entertainment in the past 30 minutes
+	\end{itemize}
+
+	So habits were formed through repeated exposure, then reinforced by watching media.
+\end{frame}
+
 
 \begin{frame}{Potential Confounds I}{Time Away from Peers}
 	\textbf{Hypothesis:} Children watched more media, spent less time with peers, reduced illness transmission.
@@ -212,10 +226,24 @@
 	When trying to promote a certain type of behavior, messages should focus on frequency and simplicity over technical content 
 
 	Phones with preloaded content could be used in areas with poor network coverage
+\end{frame}
+
+\begin{frame}
+	\Huge
+	\centering
+
+	\vfill
+
+	Thank you!
+
+	\vfill
+
+	\normalsize
+	\flushleft
 
 
-
-
+	\color{gray}Statistical significance and $p$-values are integrated through the
+	presentation of results rather than listed separately.
 \end{frame}
 
 
